@@ -1,0 +1,18 @@
+@use '../util' as *;
+
+.attribution {
+  font-size: rem(11);
+  text-align: center;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  color: white;
+}
+
+.attribution a {
+  color: var(--theme3-text1);
+  // color: white;
+  // color: hsl(228, 45%, 44%);
+}

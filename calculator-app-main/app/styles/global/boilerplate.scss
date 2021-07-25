@@ -1,14 +1,26 @@
-html{
+html {
   font-size: 100%;
   box-sizing: border-box;
 }
 
-*, *::before,*::after{
+*,
+*::before,
+*::after {
   box-sizing: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-body{
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: var(--font-spartan);
+  font-weight: 700;
+  background-color: var(--theme1-background);
 }

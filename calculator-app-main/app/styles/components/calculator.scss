@@ -1,0 +1,41 @@
+@use '../util' as *;
+.container {
+  position: relative;
+}
+
+.container .calc {
+  position: relative;
+  height: 600px;
+  width: 350px;
+  overflow: hidden;
+}
+
+.container .calc .menubar {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  color: var(--theme1-text1);
+}
+
+.container .calc .screen {
+  position: relative;
+  background-color: var(--theme1-screen-background);
+  height: rem(90);
+  width: 100%;
+  border-radius: rem(8);
+  -webkit-border-radius: rem(8);
+  -moz-border-radius: rem(8);
+  -ms-border-radius: rem(8);
+  -o-border-radius: rem(8);
+}
+.container .calc .screen p {
+  text-align: right;
+  vertical-align: middle;
+  line-height: rem(90);
+  margin: auto;
+  font-size: rem(30);
+  padding: 0 rem(15);
+  color: var(--theme1-text1);
+}

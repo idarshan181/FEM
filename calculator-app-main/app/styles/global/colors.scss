@@ -1,6 +1,4 @@
 :root {
-  --white: hsl(0, 0, 100%);
-
   --theme1-background: hsl(222, 26%, 31%);
   --theme1-keypad-background: hsl(223, 31%, 20%);
   --theme1-toggle: hsl(223, 31%, 20%);
@@ -11,11 +9,12 @@
   --theme1-key2-shadow: hsl(6, 70%, 34%);
   --theme1-key3-background: hsl(30, 25%, 89%);
   --theme1-key3-shadow: hsl(28, 16%, 65%);
-  --theme1-text1: hsl(221, 14%, 31%);
+  --theme1-text1: hsl(0, 0%, 100%);
+  --theme1-text2: hsl(221, 14%, 31%);
 
   // THEME2
   // Backgrounds
-  --theme2-background: hsl(0, 0%, 90%);
+  --theme2-background: hsl(0, 9%, 25%);
   --theme2-keypad-background: hsl(0, 5%, 81%);
   --theme2-screen-background: hsl(0, 0%, 93%);
   --theme2-toggle: hsl(0, 5%, 81%);

@@ -1,0 +1,73 @@
+@use '../util' as *;
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: rem(20);
+  margin-top: rem(20);
+  padding: rem(20) rem(20);
+  background-color: var(--theme1-keypad-background);
+  border-radius: rem(8);
+  -webkit-border-radius: rem(8);
+  -moz-border-radius: rem(8);
+  -ms-border-radius: rem(8);
+  -o-border-radius: rem(8);
+}
+.btn {
+  display: inline-flex;
+  height: rem(40);
+  width: rem(60);
+  font-size: rem(18);
+  text-transform: uppercase;
+  background-color: var(--theme1-key3-background);
+  color: var(--theme1-text2);
+  justify-content: center;
+  align-items: center;
+  border-radius: rem(8);
+  padding-top: rem(8);
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+  -webkit-border-radius: rem(8);
+  -moz-border-radius: rem(8);
+  -ms-border-radius: rem(8);
+  -o-border-radius: rem(8);
+  -webkit-transition: border-color 0.2s ease-in-out, background-color 0.2s;
+  -moz-transition: border-color 0.2s ease-in-out, background-color 0.2s;
+  -ms-transition: border-color 0.2s ease-in-out, background-color 0.2s;
+  -o-transition: border-color 0.2s ease-in-out, background-color 0.2s;
+}
+
+.btn:hover {
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+}
+
+.btn:active {
+  font-weight: 400;
+}
+
+.btn.del {
+  padding-top: rem(6);
+  font-size: rem(16);
+
+  background-color: var(--theme1-key1-background);
+  color: var(--theme1-text1);
+}
+
+.btn.reset {
+  grid-area: 5 / 1 / 6 / 3;
+  width: 100%;
+  // padding-top: rem(0);
+  font-size: rem(14);
+  background-color: var(--theme1-key1-background);
+  color: var(--theme1-text1);
+}
+
+.btn.submit {
+  grid-area: 5 / 3 / 6 / 5;
+  width: 100%;
+  font-size: rem(14);
+  background-color: var(--theme1-key2-background);
+  color: var(--theme1-text1);
+}
